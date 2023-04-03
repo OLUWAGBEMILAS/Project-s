@@ -17,20 +17,8 @@ echo "Hello there!How are you doing ?"
 read ans
 sleep 1
 echo
-echo
+ echo
 #checking the internet connection of the server
-host='www.google.com"
-ping -c 3 $host > connectiontest
-if [$/ = 0 ]
-then
-	echo "Internet connection is available"
-	sleep3
-else
-	echo "No connection error"
-	exit
-fi
-
-
 echo
 echo
 echo
@@ -55,7 +43,6 @@ if [ $agree = Y ]
 then
 	echo "PERFECT"
 	sleep 1
-	sudo chmod 777 /var/www/html/index.html
        	echo "what is your firstname"
         read firstname
         echo "what state are you in"
