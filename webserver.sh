@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#OWNER:OLUWAGBEMILA OLUWASEYIFUNMI
 
 #To check the user running the bash script
 whoami
@@ -19,6 +19,17 @@ sleep 1
 echo
 echo
 #checking the internet connection of the server
+host='www.google.com"
+ping -c 3 $host > connectiontest
+if [$/ = 0 ]
+then
+	echo "Internet connection is available"
+	sleep3
+else
+	echo "No connection error"
+	exit
+fi
+
 
 echo
 echo
@@ -42,6 +53,9 @@ read agree
 if [ $agree = Y ]
 
 then
+	echo "PERFECT"
+	sleep 1
+	sudo chmod 777 /var/www/html/index.html
        	echo "what is your firstname"
         read firstname
         echo "what state are you in"
@@ -61,10 +75,8 @@ firstname :$firstname
 state : $state
 age : $age
 height :$height
-gender :$gender "> index.html
-
-
-sudo chmod 777 index.html
+gender :$gender ">>/var/www/html/index.html
+echo >> /var/www/html/index.html
 echo "Thanks for your time........."
 
 
