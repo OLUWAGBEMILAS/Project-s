@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#OWNER:Oluwaseyifunmi oluwagbemila 
+
 
 #create a file with the name Domino.yam1
 touch Domino.yam1
